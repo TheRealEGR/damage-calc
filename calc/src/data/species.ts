@@ -30,7 +30,7 @@ const RBY: {[name: string]: SpeciesData} = {
   },
   Aerodactyl: {
     types: ['Rock', 'Flying'],
-    bs: {hp: 80, at: 105, df: 65, sp: 130, sl: 60},
+    bs: {hp: 80, at: 105, df: 65, sp: 130, sl: 75},
     weightkg: 59,
   },
   Alakazam: {
@@ -38,10 +38,15 @@ const RBY: {[name: string]: SpeciesData} = {
     bs: {hp: 55, at: 50, df: 45, sp: 120, sl: 135},
     weightkg: 48,
   },
-  Arbok: {types: ['Poison'], bs: {hp: 60, at: 85, df: 69, sp: 80, sl: 65}, weightkg: 65},
+  Annihilape: {
+    types: ['Fighting', 'Ghost'],
+    bs: {hp: 110, at: 115, df: 80, sp: 90, sl: 90},
+    weightkg: 56,
+  },
+  Arbok: {types: ['Poison'], bs: {hp: 60, at: 95, df: 69, sp: 80, sl: 79}, weightkg: 65},
   Arcanine: {
     types: ['Fire'],
-    bs: {hp: 90, at: 110, df: 80, sp: 95, sl: 80},
+    bs: {hp: 90, at: 110, df: 80, sp: 95, sl: 100},
     weightkg: 155,
   },
   Articuno: {
@@ -51,7 +56,7 @@ const RBY: {[name: string]: SpeciesData} = {
   },
   Beedrill: {
     types: ['Bug', 'Poison'],
-    bs: {hp: 65, at: 80, df: 40, sp: 75, sl: 45},
+    bs: {hp: 65, at: 90, df: 40, sp: 75, sl: 80},
     weightkg: 29.5,
   },
   Bellsprout: {
@@ -62,8 +67,13 @@ const RBY: {[name: string]: SpeciesData} = {
   },
   Blastoise: {
     types: ['Water'],
-    bs: {hp: 79, at: 83, df: 100, sp: 78, sl: 85},
+    bs: {hp: 79, at: 83, df: 100, sp: 78, sl: 105},
     weightkg: 85.5,
+  },
+  Blissey: {
+    types: ['Normal'],
+    bs: {hp: 255, at: 10, df: 10, sp: 55, sl: 135},
+    weightkg: 46.8,
   },
   Bulbasaur: {
     types: ['Grass', 'Poison'],
@@ -73,7 +83,7 @@ const RBY: {[name: string]: SpeciesData} = {
   },
   Butterfree: {
     types: ['Bug', 'Flying'],
-    bs: {hp: 60, at: 45, df: 50, sp: 70, sl: 80},
+    bs: {hp: 60, at: 45, df: 50, sp: 70, sl: 90},
     weightkg: 32,
   },
   Caterpie: {
@@ -86,28 +96,29 @@ const RBY: {[name: string]: SpeciesData} = {
     types: ['Normal'],
     bs: {hp: 250, at: 5, df: 5, sp: 50, sl: 105},
     weightkg: 34.6,
+    nfe: true,
   },
   Charizard: {
     types: ['Fire', 'Flying'],
-    bs: {hp: 78, at: 84, df: 78, sp: 100, sl: 85},
+    bs: {hp: 78, at: 84, df: 78, sp: 100, sl: 109},
     weightkg: 90.5,
   },
   Charmander: {
     types: ['Fire'],
-    bs: {hp: 39, at: 52, df: 43, sp: 65, sl: 50},
+    bs: {hp: 39, at: 52, df: 43, sp: 65, sl: 65},
     weightkg: 8.5,
     nfe: true,
   },
   Charmeleon: {
     types: ['Fire'],
-    bs: {hp: 58, at: 64, df: 58, sp: 80, sl: 65},
+    bs: {hp: 58, at: 64, df: 58, sp: 80, sl: 80},
     weightkg: 19,
     nfe: true,
   },
-  Clefable: {types: ['Normal'], bs: {hp: 95, at: 70, df: 73, sp: 60, sl: 85}, weightkg: 40},
+  Clefable: {types: ['Normal'], bs: {hp: 95, at: 70, df: 73, sp: 60, sl: 95}, weightkg: 40},
   Clefairy: {
     types: ['Normal'],
-    bs: {hp: 70, at: 45, df: 48, sp: 35, sl: 60},
+    bs: {hp: 70, at: 45, df: 48, sp: 35, sl: 65},
     weightkg: 7.5,
     nfe: true,
   },
@@ -118,7 +129,7 @@ const RBY: {[name: string]: SpeciesData} = {
   },
   Cubone: {
     types: ['Ground'],
-    bs: {hp: 50, at: 50, df: 95, sp: 35, sl: 40},
+    bs: {hp: 50, at: 50, df: 95, sp: 35, sl: 50},
     weightkg: 6.5,
     nfe: true,
   },
@@ -136,7 +147,7 @@ const RBY: {[name: string]: SpeciesData} = {
   Ditto: {types: ['Normal'], bs: {hp: 48, at: 48, df: 48, sp: 48, sl: 48}, weightkg: 4},
   Dodrio: {
     types: ['Normal', 'Flying'],
-    bs: {hp: 60, at: 110, df: 70, sp: 100, sl: 60},
+    bs: {hp: 60, at: 110, df: 70, sp: 110, sl: 60},
     weightkg: 85.2,
   },
   Doduo: {
@@ -170,7 +181,7 @@ const RBY: {[name: string]: SpeciesData} = {
   },
   Dugtrio: {
     types: ['Ground'],
-    bs: {hp: 35, at: 80, df: 50, sp: 120, sl: 70},
+    bs: {hp: 35, at: 100, df: 50, sp: 120, sl: 70},
     weightkg: 33.3,
   },
   Eevee: {
@@ -181,19 +192,30 @@ const RBY: {[name: string]: SpeciesData} = {
   },
   Ekans: {
     types: ['Poison'],
-    bs: {hp: 35, at: 60, df: 44, sp: 55, sl: 40},
+    bs: {hp: 35, at: 60, df: 44, sp: 55, sl: 54},
     weightkg: 6.9,
     nfe: true,
   },
   Electabuzz: {
     types: ['Electric'],
-    bs: {hp: 65, at: 83, df: 57, sp: 105, sl: 85},
+    bs: {hp: 65, at: 83, df: 57, sp: 105, sl: 95},
     weightkg: 30,
+    nfe: true,
+  },
+  Electivire: {
+    types: ['Electric'],
+    bs: {hp: 75, at: 123, df: 67, sp: 95, sl: 95,},
+    weightkg: 138.6,
   },
   Electrode: {
     types: ['Electric'],
-    bs: {hp: 60, at: 50, df: 70, sp: 140, sl: 80},
+    bs: {hp: 60, at: 50, df: 70, sp: 150, sl: 80},
     weightkg: 66.6,
+  },
+  Espeon: {
+    types: ['Psychic'],
+    bs: {hp: 65, at: 65, df: 60, sp: 110, sl: 130},
+    weightkg: 26.5,
   },
   Exeggcute: {
     types: ['Grass', 'Psychic'],
@@ -208,7 +230,7 @@ const RBY: {[name: string]: SpeciesData} = {
   },
   'Farfetch\u2019d': {
     types: ['Normal', 'Flying'],
-    bs: {hp: 52, at: 65, df: 55, sp: 60, sl: 58},
+    bs: {hp: 52, at: 90, df: 55, sp: 60, sl: 62},
     weightkg: 15,
   },
   Fearow: {
@@ -234,6 +256,11 @@ const RBY: {[name: string]: SpeciesData} = {
     weightkg: 20,
     nfe: true,
   },
+  Glaceon: {
+    types: ['Ice'],
+    bs: {hp: 65, at: 60, df: 110, sp: 65, sl: 130},
+    weightkg: 25.9,
+  },
   Gloom: {
     types: ['Grass', 'Poison'],
     bs: {hp: 60, at: 65, df: 70, sp: 40, sl: 85},
@@ -251,10 +278,10 @@ const RBY: {[name: string]: SpeciesData} = {
     weightkg: 15,
     nfe: true,
   },
-  Golduck: {types: ['Water'], bs: {hp: 80, at: 82, df: 78, sp: 85, sl: 80}, weightkg: 76.6},
+  Golduck: {types: ['Water'], bs: {hp: 80, at: 82, df: 78, sp: 85, sl: 95}, weightkg: 76.6},
   Golem: {
     types: ['Rock', 'Ground'],
-    bs: {hp: 80, at: 110, df: 130, sp: 45, sl: 55},
+    bs: {hp: 80, at: 120, df: 130, sp: 45, sl: 65},
     weightkg: 300,
   },
   Graveler: {
@@ -265,13 +292,13 @@ const RBY: {[name: string]: SpeciesData} = {
   },
   Grimer: {
     types: ['Poison'],
-    bs: {hp: 80, at: 80, df: 50, sp: 25, sl: 40},
+    bs: {hp: 80, at: 80, df: 50, sp: 25, sl: 50},
     weightkg: 30,
     nfe: true,
   },
   Growlithe: {
     types: ['Fire'],
-    bs: {hp: 55, at: 70, df: 45, sp: 60, sl: 50},
+    bs: {hp: 55, at: 70, df: 45, sp: 60, sl: 70},
     weightkg: 19,
     nfe: true,
   },
@@ -288,13 +315,18 @@ const RBY: {[name: string]: SpeciesData} = {
   },
   Hitmonchan: {
     types: ['Fighting'],
-    bs: {hp: 50, at: 105, df: 79, sp: 76, sl: 35},
+    bs: {hp: 50, at: 105, df: 79, sp: 76, sl: 110},
     weightkg: 50.2,
   },
   Hitmonlee: {
     types: ['Fighting'],
-    bs: {hp: 50, at: 120, df: 53, sp: 87, sl: 35},
+    bs: {hp: 50, at: 120, df: 53, sp: 87, sl: 110},
     weightkg: 49.8,
+  },
+  Hitmontop: {
+    types: ['Fighting'],
+    bs: {hp: 50, at: 95, df: 95, sp: 70, sl: 110, },
+    weightkg: 48,
   },
   Horsea: {
     types: ['Water'],
@@ -326,7 +358,7 @@ const RBY: {[name: string]: SpeciesData} = {
   },
   Jynx: {
     types: ['Ice', 'Psychic'],
-    bs: {hp: 65, at: 50, df: 35, sp: 95, sl: 95},
+    bs: {hp: 65, at: 50, df: 35, sp: 95, sl: 115},
     weightkg: 40.6,
   },
   Kabuto: {
@@ -354,10 +386,15 @@ const RBY: {[name: string]: SpeciesData} = {
   },
   Kangaskhan: {
     types: ['Normal'],
-    bs: {hp: 105, at: 95, df: 80, sp: 90, sl: 40},
+    bs: {hp: 105, at: 95, df: 80, sp: 90, sl: 80},
     weightkg: 80,
   },
   Kingler: {types: ['Water'], bs: {hp: 55, at: 130, df: 115, sp: 75, sl: 50}, weightkg: 60},
+  Kingdra: {
+    types: ['Water', 'Dragon'],
+    bs: {hp: 75, at: 95, df: 95, sp: 85, sl: 95},
+    weightkg: 152,
+  },
   Koffing: {
     types: ['Poison'],
     bs: {hp: 40, at: 65, df: 95, sp: 35, sl: 60},
@@ -379,15 +416,21 @@ const RBY: {[name: string]: SpeciesData} = {
     types: ['Normal'],
     bs: {hp: 90, at: 55, df: 75, sp: 30, sl: 60},
     weightkg: 65.5,
+    nfe: true,
+  },
+  Lickilicky: {
+    types: ['Normal'],
+    bs: {hp: 110, at: 85, df: 95, sp: 50, sd: 95},
+    weightkg: 140,
   },
   Machamp: {
     types: ['Fighting'],
-    bs: {hp: 90, at: 130, df: 80, sp: 55, sl: 65},
+    bs: {hp: 90, at: 130, df: 80, sp: 55, sl: 85},
     weightkg: 130,
   },
   Machoke: {
     types: ['Fighting'],
-    bs: {hp: 80, at: 100, df: 70, sp: 45, sl: 50},
+    bs: {hp: 80, at: 100, df: 70, sp: 45, sl: 60},
     weightkg: 70.5,
     nfe: true,
   },
@@ -407,6 +450,12 @@ const RBY: {[name: string]: SpeciesData} = {
     types: ['Fire'],
     bs: {hp: 65, at: 95, df: 57, sp: 93, sl: 85},
     weightkg: 44.5,
+    nfe: true,
+  },
+  Magmortar: {
+    types: ['Fire'],
+    bs: {hp: 75, at: 95, df: 67, sp: 83, sl: 125},
+    weightkg: 68,
   },
   Magnemite: {
     types: ['Electric'],
@@ -425,7 +474,7 @@ const RBY: {[name: string]: SpeciesData} = {
     weightkg: 28,
     nfe: true,
   },
-  Marowak: {types: ['Ground'], bs: {hp: 60, at: 80, df: 110, sp: 45, sl: 50}, weightkg: 45},
+  Marowak: {types: ['Ground'], bs: {hp: 60, at: 80, df: 110, sp: 45, sl: 80}, weightkg: 45},
   Meowth: {
     types: ['Normal'],
     bs: {hp: 40, at: 45, df: 35, sp: 90, sl: 40},
@@ -455,10 +504,10 @@ const RBY: {[name: string]: SpeciesData} = {
   },
   'Mr. Mime': {
     types: ['Psychic'],
-    bs: {hp: 40, at: 45, df: 65, sp: 90, sl: 100},
+    bs: {hp: 40, at: 45, df: 65, sp: 90, sl: 120},
     weightkg: 54.5,
   },
-  Muk: {types: ['Poison'], bs: {hp: 105, at: 105, df: 75, sp: 50, sl: 65}, weightkg: 30},
+  Muk: {types: ['Poison'], bs: {hp: 105, at: 105, df: 75, sp: 50, sl: 100}, weightkg: 30},
   Nidoking: {
     types: ['Poison', 'Ground'],
     bs: {hp: 81, at: 92, df: 77, sp: 85, sl: 75},
@@ -517,8 +566,9 @@ const RBY: {[name: string]: SpeciesData} = {
   },
   Onix: {
     types: ['Rock', 'Ground'],
-    bs: {hp: 35, at: 45, df: 160, sp: 70, sl: 30},
+    bs: {hp: 35, at: 45, df: 160, sp: 70, sl: 45},
     weightkg: 210,
+    nfe: true,
   },
   Paras: {
     types: ['Bug', 'Grass'],
@@ -534,7 +584,7 @@ const RBY: {[name: string]: SpeciesData} = {
   Persian: {types: ['Normal'], bs: {hp: 65, at: 70, df: 60, sp: 115, sl: 65}, weightkg: 32},
   Pidgeot: {
     types: ['Normal', 'Flying'],
-    bs: {hp: 83, at: 80, df: 75, sp: 91, sl: 70},
+    bs: {hp: 83, at: 80, df: 75, sp: 101, sl: 70},
     weightkg: 39.5,
   },
   Pidgeotto: {
@@ -551,11 +601,11 @@ const RBY: {[name: string]: SpeciesData} = {
   },
   Pikachu: {
     types: ['Electric'],
-    bs: {hp: 35, at: 55, df: 30, sp: 90, sl: 50},
+    bs: {hp: 35, at: 55, df: 40, sp: 90, sl: 50},
     weightkg: 6,
     nfe: true,
   },
-  Pinsir: {types: ['Bug'], bs: {hp: 65, at: 125, df: 100, sp: 85, sl: 55}, weightkg: 55},
+  Pinsir: {types: ['Bug'], bs: {hp: 65, at: 125, df: 100, sp: 85, sl: 70}, weightkg: 55},
   Poliwag: {
     types: ['Water'],
     bs: {hp: 40, at: 50, df: 40, sp: 90, sl: 40},
@@ -570,8 +620,13 @@ const RBY: {[name: string]: SpeciesData} = {
   },
   Poliwrath: {
     types: ['Water', 'Fighting'],
-    bs: {hp: 90, at: 85, df: 95, sp: 70, sl: 70},
+    bs: {hp: 90, at: 95, df: 95, sp: 70, sl: 90},
     weightkg: 54,
+  },
+  Politoed: {
+    types: ['Water'],
+    bs: {hp: 90, at: 75, df: 75, sp: 70, sl: 100},
+    weightkg: 33.9,
   },
   Ponyta: {
     types: ['Fire'],
@@ -581,17 +636,30 @@ const RBY: {[name: string]: SpeciesData} = {
   },
   Porygon: {
     types: ['Normal'],
-    bs: {hp: 65, at: 60, df: 70, sp: 40, sl: 75},
+    bs: {hp: 65, at: 60, df: 70, sp: 40, sl: 85},
     weightkg: 36.5,
+    nfe: true,
+  },
+  Porygon2: {
+    types: ['Normal'],
+    bs: {hp: 85, at: 80, df: 90, sp: 60, sl: 105},
+    weightkg: 32.5,
+    nfe: true,
+  },
+  'Porygon-Z': {
+    types: ['Normal'],
+    bs: {hp: 85, at: 80, df: 70, sp: 90, sl: 135},
+    weightkg: 34,
   },
   Primeape: {
     types: ['Fighting'],
     bs: {hp: 65, at: 105, df: 60, sp: 95, sl: 60},
     weightkg: 32,
+    nfe: true,
   },
   Psyduck: {
     types: ['Water'],
-    bs: {hp: 50, at: 52, df: 48, sp: 55, sl: 50},
+    bs: {hp: 50, at: 52, df: 48, sp: 55, sl: 65},
     weightkg: 19.6,
     nfe: true,
   },
@@ -603,7 +671,7 @@ const RBY: {[name: string]: SpeciesData} = {
   Rapidash: {types: ['Fire'], bs: {hp: 65, at: 100, df: 70, sp: 105, sl: 80}, weightkg: 95},
   Raticate: {
     types: ['Normal'],
-    bs: {hp: 55, at: 81, df: 60, sp: 97, sl: 50},
+    bs: {hp: 55, at: 81, df: 60, sp: 97, sl: 70},
     weightkg: 18.5,
   },
   Rattata: {
@@ -616,12 +684,18 @@ const RBY: {[name: string]: SpeciesData} = {
     types: ['Ground', 'Rock'],
     bs: {hp: 105, at: 130, df: 120, sp: 40, sl: 45},
     weightkg: 120,
+    nfe: true,
   },
   Rhyhorn: {
     types: ['Ground', 'Rock'],
     bs: {hp: 80, at: 85, df: 95, sp: 25, sl: 30},
     weightkg: 115,
     nfe: true,
+  },
+  Rhyperior: {
+    types: ['Ground', 'Rock'],
+    bs: {hp: 115, at: 140, df: 130, sp: 40, sl: 55},
+    weightkg: 282.8,
   },
   Sandshrew: {
     types: ['Ground'],
@@ -636,10 +710,10 @@ const RBY: {[name: string]: SpeciesData} = {
   },
   Scyther: {
     types: ['Bug', 'Flying'],
-    bs: {hp: 70, at: 110, df: 80, sp: 105, sl: 55},
+    bs: {hp: 70, at: 110, df: 80, sp: 105, sl: 80},
     weightkg: 56,
   },
-  Seadra: {types: ['Water'], bs: {hp: 55, at: 65, df: 95, sp: 85, sl: 95}, weightkg: 25},
+  Seadra: {types: ['Water'], bs: {hp: 55, at: 65, df: 95, sp: 85, sl: 95}, weightkg: 25, nfe: true,},
   Seaking: {types: ['Water'], bs: {hp: 80, at: 92, df: 65, sp: 68, sl: 80}, weightkg: 39},
   Seel: {
     types: ['Water'],
@@ -655,8 +729,13 @@ const RBY: {[name: string]: SpeciesData} = {
   },
   Slowbro: {
     types: ['Water', 'Psychic'],
-    bs: {hp: 95, at: 75, df: 110, sp: 30, sl: 80},
+    bs: {hp: 95, at: 75, df: 110, sp: 30, sl: 100},
     weightkg: 78.5,
+  },
+  Slowking: {
+    types: ['Water', 'Psychic'],
+    bs: {hp: 95, at: 75, df: 80, sp: 30, sl: 110},
+    weightkg: 79.5,
   },
   Slowpoke: {
     types: ['Water', 'Psychic'],
@@ -666,7 +745,7 @@ const RBY: {[name: string]: SpeciesData} = {
   },
   Snorlax: {
     types: ['Normal'],
-    bs: {hp: 160, at: 110, df: 65, sp: 30, sl: 65},
+    bs: {hp: 160, at: 110, df: 65, sp: 30, sl: 110},
     weightkg: 460,
   },
   Spearow: {
@@ -677,7 +756,7 @@ const RBY: {[name: string]: SpeciesData} = {
   },
   Squirtle: {
     types: ['Water'],
-    bs: {hp: 44, at: 48, df: 65, sp: 43, sl: 50},
+    bs: {hp: 44, at: 48, df: 65, sp: 43, sl: 64},
     weightkg: 9,
     nfe: true,
   },
@@ -691,6 +770,11 @@ const RBY: {[name: string]: SpeciesData} = {
     bs: {hp: 30, at: 45, df: 55, sp: 85, sl: 70},
     weightkg: 34.5,
     nfe: true,
+  },
+  Steelix: {
+    types: ['Rock', 'Ground'],
+    bs: {hp: 75, at: 85, df: 200, sp: 30, sl: 65},
+    weightkg: 400,
   },
   Tangela: {
     types: ['Grass'],
@@ -758,7 +842,7 @@ const RBY: {[name: string]: SpeciesData} = {
   },
   Wartortle: {
     types: ['Water'],
-    bs: {hp: 59, at: 63, df: 80, sp: 58, sl: 65},
+    bs: {hp: 59, at: 63, df: 80, sp: 58, sl: 80},
     weightkg: 22.5,
     nfe: true,
   },
@@ -781,7 +865,7 @@ const RBY: {[name: string]: SpeciesData} = {
   },
   Wigglytuff: {
     types: ['Normal'],
-    bs: {hp: 140, at: 70, df: 45, sp: 45, sl: 50},
+    bs: {hp: 140, at: 70, df: 45, sp: 45, sl: 75},
     weightkg: 12,
   },
   Zapdos: {
